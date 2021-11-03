@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/fe28fdb4bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-brand">
+        <a class="link" href="./index.html">Ankit</a>
+      </div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="./index.html">home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="./about.html">About Me</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="./contact.html">Contact Me</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="./gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <h2>CONTACT ME</h2>
+      <form action="mailto:demo@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="First and Last"
+            required
+            minlength="3"
+            maxlength="25"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="email@domain.tld"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            name="Message"
+            id="message"
+            rows="5"
+            placeholder="Type your message here...."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="submit">
+            <i class="far fa-paper-plane"></i>Send
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-header">social media presence</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/ANKIT9761"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/"><i class="fab fa-twitter fa-2x"></i></a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/ankit-kanyal-43460b169/"
+            ><i class="fab fa-linkedin-in fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
